@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">BilleteraVirtualKotlin</string>
+
+    <string name="the_best_way_to_tran_string">El lugar mas seguro para tu dinero</string>
+    <string name="alkewallet_string">AlkeWallet</string>
+    <string name="create_new_account_string">Crear cuenta nueva</string>
+    <string name="create_account_string">Crear cuenta</string>
+    <string name="already_have_account_string">Ya tiene cuenta?</string>
+    <string name="name_string">Nombre</string>
+    <string name="signup_and_start_tra_string">Registrarse y empezar a transferir</string>
+    <string name="enter_your_name_string">Ingresar nombre</string>
+    <string name="lastname_string">Apellido</string>
+    <string name="enter_your_lastname_string">Ingresar apellido</string>
+    <string name="email_string">Email</string>
+    <string name="enter_your_email_string">Ingresar tu email</string>
+    <string name="password_string">Contraseña</string>
+    <string name="enter_your_password_string">Ingresar tu contraseña</string>
+    <string name="re_enter_your_password_string">Reingresar contraseña</string>
+
 </resources>
