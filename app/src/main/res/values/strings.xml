@@ -8,6 +8,7 @@
     <string name="already_have_account_string">Ya tiene cuenta?</string>
     <string name="name_string">Nombre</string>
     <string name="signup_and_start_tra_string">Registrarse y empezar a transferir</string>
+    <string name="login_and_start_tran_string">Logea y empieza a tranferir!</string>
     <string name="enter_your_name_string">Ingresar nombre</string>
     <string name="lastname_string">Apellido</string>
     <string name="enter_your_lastname_string">Ingresar apellido</string>
@@ -16,5 +17,17 @@
     <string name="password_string">Contraseña</string>
     <string name="enter_your_password_string">Ingresar tu contraseña</string>
     <string name="re_enter_your_password_string">Reingresar contraseña</string>
+    <string name="forget_password_string">Olvidaste tu contraseña?</string>
+    <string name="login_string">Login</string>
+
+    <string name="hi__amanda__string">Hola, Amanda!</string>
+    <string name="total_balance_number_string">$124.57</string>
+    <string name="total_balance_string">Balance Total</string>
+    <string name="send_money_string">Enviar Dinero</string>
+    <string name="request_money_string">Ingresar Dinero</string>
+    <string name="last_transactions_string">Ultimas transacciones</string>
+    <string name="there_s_no_transacti_string">No hay transacciones registradas!</string>
+    <string name="profile_picture">profile_picture</string>
+    <string name="dashboard_string">Inicio</string>
 
 </resources>

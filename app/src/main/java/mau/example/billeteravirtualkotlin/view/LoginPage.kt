@@ -2,30 +2,31 @@ package mau.example.billeteravirtualkotlin.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mau.example.billeteravirtualkotlin.R
 
-class SplashScreen : AppCompatActivity() {
+class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // ...splash screen
-        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login_page)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        splashScreen.setKeepOnScreenCondition {true}
-        // solo para detener y poder ver
-        Thread.sleep(1000)
-        val intent = Intent(this, LoginSignupPage::class.java)
-        startActivity(intent)
-        finish()
+
+        val btnSendLogin = findViewById<Button>(R.id.btnSendLogin)
+
+        btnSendLogin.setOnClickListener {
+            val intent = Intent(this, HomePageEmptyCase::class.java)
+            startActivity(intent)
+        }
     }
+
+
 }

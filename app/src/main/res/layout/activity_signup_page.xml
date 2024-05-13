@@ -15,48 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <!--
-            &lt;!&ndash; boton crear cuenta &ndash;&gt;
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="620dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <Button
-                    android:id="@+id/signup_button"
-                    android:layout_width="315dp"
-                    android:layout_height="49dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <View
-                    android:layout_width="315dp"
-                    android:layout_height="49dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/rectangle_shape"
-                    android:visibility="visible" />
-
-                <TextView
-                    android:layout_width="128.4dp"
-                    android:layout_height="25.4dp"
-                    android:layout_gravity="center_horizontal|center"
-                    android:layout_marginStart="95dp"
-                    android:layout_marginTop="14dp"
-                    android:fontFamily="@font/jua"
-                    android:gravity="center"
-                    android:text="@string/crear_cuenta_string"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-
-            </RelativeLayout>
-            &lt;!&ndash; ya tiene cuenta? -->
+        <!--crear cuenta-->
         <Button
             android:id="@+id/btnGoToSignup"
             android:layout_width="195dp"
@@ -117,7 +76,6 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
-        <!-- contraseña -->
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
@@ -197,7 +155,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp">
+            android:layout_marginTop="4dp"
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
