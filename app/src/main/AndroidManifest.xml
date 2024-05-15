@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BilleteraVirtualKotlin">
         <activity
+            android:name=".view.HomePage"
+            android:exported="false" />
+        <activity
             android:name=".view.HomePageEmptyCase"
             android:exported="false" />
         <activity
