@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.HomePageEmptyCase">
+    tools:context=".view.HomePageEmptyCase"
+    tools:ignore="ContentDescription" >
 
     <RelativeLayout
         android:id="@+id/header"
@@ -215,13 +216,13 @@
         android:text="@string/send_money_string"
         android:textColor="@color/black"
         android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btnRequestMoney"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header"
-        tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
+        tools:ignore="RtlHardcoded,SmallSp,TouchTargetSizeCheck,VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnRequestMoney"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_centerHorizontal="true"
@@ -238,7 +239,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSendLogin"
         app:layout_constraintTop_toBottomOf="@+id/header"
-        tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
+        tools:ignore="RtlHardcoded,SmallSp,TouchTargetSizeCheck,TextContrastCheck,VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/last_transactions"
