@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BilleteraVirtualKotlin">
         <activity
+            android:name=".view.SendMoney"
+            android:exported="false" />
+        <activity
             android:name=".view.RequestMoney"
             android:exported="false" />
         <activity

@@ -202,7 +202,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnSendLogin"
+        android:id="@+id/btnSendMoney"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
@@ -237,7 +237,7 @@
         android:textColor="@color/white"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnSendLogin"
+        app:layout_constraintStart_toEndOf="@+id/btnSendMoney"
         app:layout_constraintTop_toBottomOf="@+id/header"
         tools:ignore="RtlHardcoded,SmallSp,TouchTargetSizeCheck,TextContrastCheck,VisualLintButtonSize" />
 
@@ -254,7 +254,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSendLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendMoney"
         tools:ignore="TextSizeCheck" />
 
     <ImageView

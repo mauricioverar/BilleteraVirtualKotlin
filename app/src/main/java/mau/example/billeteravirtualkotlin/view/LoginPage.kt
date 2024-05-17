@@ -20,7 +20,7 @@ class LoginPage : AppCompatActivity() {
             insets
         }
 
-        val btnSendLogin = findViewById<Button>(R.id.btnSendLogin)
+        val btnSendLogin = findViewById<Button>(R.id.btnSendMoney)
 
         btnSendLogin.setOnClickListener {
             //val intent = Intent(this, HomePageEmptyCase::class.java)

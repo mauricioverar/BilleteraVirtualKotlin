@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.LoginPage">
+    tools:context=".view.LoginPage"
+    tools:ignore="ContentDescription">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
         <!--crear cuenta-->
         <Button
-            android:id="@+id/btnSendLogin"
+            android:id="@+id/btnSendMoney"
             android:layout_width="195dp"
             android:layout_height="45dp"
             android:layout_centerHorizontal="true"

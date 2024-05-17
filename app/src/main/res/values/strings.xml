@@ -31,6 +31,7 @@
     <string name="dashboard_string">Inicio</string>
 
     <string name="payment_amount_in_string">Cantidad a ingresar</string>
+    <string name="payment_amount_out_string">Cantidad a transferir</string>
     <string name="payment_note_string">Notas de transferncia</string>
     <string name="add_payment_note_string">Agregar notas de transferencia(opcional)</string>
     <string name="request_payment_string">Ingresar Dinero</string>
