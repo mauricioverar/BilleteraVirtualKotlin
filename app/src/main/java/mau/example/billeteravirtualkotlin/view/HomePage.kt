@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import mau.example.billeteravirtualkotlin.R
 import mau.example.billeteravirtualkotlin.databinding.ActivityHomePageBinding
 
 class HomePage : AppCompatActivity() {
@@ -16,7 +17,7 @@ class HomePage : AppCompatActivity() {
         setContentView(binding.root)
 
         val username = intent.getStringExtra("username")
-        binding.tvUsername.text = username
+        binding.tvUsername.text = getString(R.string.hello, username)
 
         binding.btnRequestMoney.setOnClickListener {
             val intent = Intent(this, RequestMoney::class.java)

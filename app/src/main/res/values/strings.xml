@@ -20,6 +20,7 @@
     <string name="forget_password_string">Olvidaste tu contraseña?</string>
     <string name="login_string">Login</string>
 
+    <string name="hello">Hola %1$s !</string>
     <string name="total_balance_number_string">$124.57</string>
     <string name="total_balance_string">Balance Total</string>
     <string name="send_money_string">Enviar Dinero</string>

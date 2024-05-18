@@ -16,10 +16,26 @@ class LoginPage : AppCompatActivity() {
         binding = ActivityLoginPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnGoToHome.setOnClickListener {
-            //val intent = Intent(this, HomePageEmptyCase::class.java)
-            val intent = Intent(this, HomePage::class.java)
-            intent.putExtra("username", binding.etEmail.text.toString())
-            startActivity(intent)
+
+            // validar email y contraseña
+            val emailRegex = "^[a-zA-Z0-9.!#\$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"
+            if (binding.etEmail.text.toString().isEmpty() || binding.etPassword.text.toString().isEmpty()) {
+                toastCampos()
+                return@setOnClickListener
+            }
+            if (binding.etEmail.text.toString().matches(emailRegex.toRegex())) {
+                toastEmailTrue()
+
+                //val intent = Intent(this, HomePageEmptyCase::class.java)
+                val intent = Intent(this, HomePage::class.java)
+                intent.putExtra("username", binding.etEmail.text.toString())
+                startActivity(intent)
+
+            } else {
+                toastEmailFalse()
+            }
+
+
         }
         binding.btnGoToNewSignup.setOnClickListener {
             val intent = Intent(this, SignupPage::class.java)
@@ -33,4 +49,17 @@ class LoginPage : AppCompatActivity() {
     private fun toast() {
         Toast.makeText(this, "Ingresa nueva contraseña", Toast.LENGTH_SHORT).show()
     }
+
+    private fun toastCampos() {
+        Toast.makeText(this, "Faltan campos", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun toastEmailTrue() {
+        Toast.makeText(this, "Email correcto", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun toastEmailFalse() {
+        Toast.makeText(this, "Email incorrecto", Toast.LENGTH_SHORT).show()
+    }
+
 }
