@@ -3,6 +3,7 @@ package mau.example.billeteravirtualkotlin.view
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +23,7 @@ class HomePage : AppCompatActivity() {
 
         val btnRequestMoney = findViewById<Button>(R.id.btnRequestMoney)
         val btnSendMoney = findViewById<Button>(R.id.btnSendMoney)
+        val profile_picture = findViewById<ImageView>(R.id.profile_picture)
 
 
         btnRequestMoney.setOnClickListener {
@@ -32,6 +34,11 @@ class HomePage : AppCompatActivity() {
 
         btnSendMoney.setOnClickListener {
             val intent = Intent(this, SendMoney::class.java)
+            startActivity(intent)
+        }
+
+        profile_picture.setOnClickListener {
+            val intent = Intent(this, ProfilePage::class.java)
             startActivity(intent)
         }
     }

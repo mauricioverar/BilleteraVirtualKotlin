@@ -22,7 +22,7 @@
             android:layout_height="262dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
-            android:background="@drawable/rectangle_ek12_shape" />
+            android:background="@color/soft_blue" />
 
         <ImageView
             android:id="@+id/path_ek7"

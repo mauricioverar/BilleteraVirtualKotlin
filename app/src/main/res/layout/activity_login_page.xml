@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
         <!--crear cuenta-->
         <Button
-            android:id="@+id/btnSendMoney"
+            android:id="@+id/btnGoToHome"
             android:layout_width="195dp"
             android:layout_height="45dp"
             android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
             tools:ignore="TouchTargetSizeCheck" />
         <!--ya tiene cuenta-->
         <Button
-            android:id="@+id/btnGoToSignup"
+            android:id="@+id/btnGoToNewSignup"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_centerHorizontal="true"

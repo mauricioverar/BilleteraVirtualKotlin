@@ -28,6 +28,7 @@
     <string name="last_transactions_string">Ultimas transacciones</string>
     <string name="there_s_no_transacti_string">No hay transacciones registradas!</string>
     <string name="profile_picture">profile_picture</string>
+    <string name="my_profile_string">Mi perfil</string>
     <string name="dashboard_string">Inicio</string>
 
     <string name="payment_amount_in_string">Cantidad a ingresar</string>
@@ -36,4 +37,9 @@
     <string name="add_payment_note_string">Agregar notas de transferencia(opcional)</string>
     <string name="request_payment_string">Ingresar Dinero</string>
 
+    <string name="my_info_string">Mi Informacion</string>
+    <string name="my_cards_string">Mis tarjetas</string>
+    <string name="settings_string">Opciones</string>
+    <string name="help_center_string">Centro de ayuda</string>
+    <string name="pencil">pencil</string>
 </resources>

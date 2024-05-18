@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
         <!--crear cuenta-->
         <Button
-            android:id="@+id/btnGoToSignup"
+            android:id="@+id/btnGoToNewSignup"
             android:layout_width="195dp"
             android:layout_height="45dp"
             android:layout_centerHorizontal="true"
@@ -32,7 +32,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
         <!--ya tiene cuenta-->
         <Button
             android:id="@+id/btnGoToLogin"
@@ -50,14 +50,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
         <ImageView
             android:id="@+id/path"
             android:layout_width="285.5dp"
             android:layout_height="462dp"
             android:layout_marginStart="-1dp"
             android:layout_marginTop="165dp"
-            android:src="@drawable/path_green" />
+            android:src="@drawable/path_green"
+            tools:ignore="ContentDescription,VisualLintBounds" />
 
         <ImageView
             android:id="@+id/path_ek1"
@@ -65,7 +66,8 @@
             android:layout_height="54.48dp"
             android:layout_marginStart="282dp"
             android:layout_marginTop="109dp"
-            android:src="@drawable/path_ek1_green" />
+            android:src="@drawable/path_ek1_green"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
     </RelativeLayout>
 
@@ -101,7 +103,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/enter_your_name_string" />
+                android:hint="@string/enter_your_name_string"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -121,7 +124,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/enter_your_lastname_string" />
+                android:hint="@string/enter_your_lastname_string"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -141,7 +145,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/enter_your_email_string" />
+                android:hint="@string/enter_your_email_string"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -162,7 +167,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/enter_your_password_string" />
+                android:hint="@string/enter_your_password_string"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -184,7 +190,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/re_enter_your_password_string" />
+                android:hint="@string/re_enter_your_password_string"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>

@@ -1,5 +1,6 @@
 package mau.example.billeteravirtualkotlin.view
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mau.example.billeteravirtualkotlin.R
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // ...splash screen
@@ -23,7 +25,7 @@ class SplashScreen : AppCompatActivity() {
         }
         splashScreen.setKeepOnScreenCondition {true}
         // solo para detener y poder ver
-        Thread.sleep(1000)
+        Thread.sleep(2000)
         val intent = Intent(this, LoginSignupPage::class.java)
         startActivity(intent)
         finish()
