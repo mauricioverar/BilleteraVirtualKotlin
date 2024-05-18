@@ -234,7 +234,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnMoneyIn"
+        android:id="@+id/btnTransSendMoney"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"

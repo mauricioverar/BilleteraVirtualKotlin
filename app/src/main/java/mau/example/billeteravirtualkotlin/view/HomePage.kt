@@ -15,6 +15,9 @@ class HomePage : AppCompatActivity() {
         binding = ActivityHomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = intent.getStringExtra("username")
+        binding.tvUsername.text = username
+
         binding.btnRequestMoney.setOnClickListener {
             val intent = Intent(this, RequestMoney::class.java)
             startActivity(intent)

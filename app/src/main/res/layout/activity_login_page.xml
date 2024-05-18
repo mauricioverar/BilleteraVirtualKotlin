@@ -97,6 +97,7 @@
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jua"
@@ -125,7 +126,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/forget_password_"
+                android:id="@+id/forget_password"
                 android:layout_width="wrap_content"
                 android:layout_height="22.4dp"
                 android:layout_gravity="center_horizontal|center_vertical"
