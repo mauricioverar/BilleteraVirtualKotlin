@@ -2,35 +2,28 @@ package mau.example.billeteravirtualkotlin.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import mau.example.billeteravirtualkotlin.R
+import mau.example.billeteravirtualkotlin.databinding.ActivitySignupPageBinding
 
 class SignupPage : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySignupPageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_signup_page)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivitySignupPageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val btnSendSignup = findViewById<Button>(R.id.btnGoToNewSignup)
-        btnSendSignup.setOnClickListener {
+        binding.btnGoToNewSignup.setOnClickListener {
             val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
         }
 
-        /*val btnGoToLogin = findViewById<Button>(R.id.btnGoToLogin)
-        btnGoToLogin.setOnClickListener {
+        binding.btnGoToLogin.setOnClickListener {
             val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
-        }*/
+        }
 
     }
 }
