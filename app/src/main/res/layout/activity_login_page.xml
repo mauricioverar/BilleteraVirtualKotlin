@@ -78,6 +78,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:fontFamily="@font/jua"
                 android:text="@string/login_and_start_tran_string"
                 android:textSize="24sp" />
@@ -86,7 +87,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="140dp"
                 android:fontFamily="@font/jua"
                 android:text="@string/email_string" />
 
@@ -129,10 +130,10 @@
             <TextView
                 android:id="@+id/forget_password"
                 android:layout_width="wrap_content"
-                android:layout_height="22.4dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="86dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="46dp"
                 android:fontFamily="@font/jua"
                 android:gravity="end"
                 android:text="@string/forget_password_string"

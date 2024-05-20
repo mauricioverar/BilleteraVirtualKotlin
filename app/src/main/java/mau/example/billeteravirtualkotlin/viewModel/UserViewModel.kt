@@ -9,7 +9,7 @@ interface ValidationListener {
     fun onValidationFailed(message: String)
 }
 
-class UserViewModel : ViewModel(), ValidationListener {
+class UserViewModel() : ViewModel(), ValidationListener { // class UserViewModel(params)
     //private val userModel = MutableLiveData<UserModel>() // observer
     private val email = MutableLiveData<String>()
     //private val password = MutableLiveData<String>()

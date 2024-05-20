@@ -17,7 +17,7 @@ class HomePage : AppCompatActivity() {
         setContentView(binding.root)
 
         val username = intent.getStringExtra("username")
-        binding.tvUsername.text = getString(R.string.hello, username)
+        binding.tvUsername.text = getString(R.string.hello, username) // getString(R.string.hello, username)
 
         binding.btnRequestMoney.setOnClickListener {
             val intent = Intent(this, RequestMoney::class.java)
