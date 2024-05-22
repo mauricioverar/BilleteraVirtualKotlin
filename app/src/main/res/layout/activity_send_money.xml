@@ -173,7 +173,7 @@
             tools:ignore="TextViewEdits" />
 
         <EditText
-            android:id="@+id/payment_amount_ek2"
+            android:id="@+id/etAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

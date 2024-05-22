@@ -174,7 +174,7 @@ tools:ignore="ContentDescription">
         tools:ignore="TextViewEdits" />
 
     <EditText
-        android:id="@+id/payment_amount_ek2"
+        android:id="@+id/etAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -183,6 +183,7 @@ tools:ignore="ContentDescription">
         android:background="@color/white"
         android:fontFamily="@font/jua"
         android:hint="12.50"
+        android:inputType="numberDecimal"
         android:padding="14dp"
         android:textColor="@color/bright_green"
         android:textSize="20sp"

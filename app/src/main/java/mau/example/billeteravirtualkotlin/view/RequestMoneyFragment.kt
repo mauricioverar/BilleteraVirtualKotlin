@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 //import mau.example.billeteravirtualkotlin.R
@@ -32,5 +33,18 @@ class RequestMoneyFragment : Fragment() {
         _binding?.left?.setOnClickListener {
             navController.popBackStack()
         }
+
+        _binding?.btnTransRequestMoney?.setOnClickListener {
+            if (binding.etAmount.text.toString().isNotEmpty()){
+                toast()
+            } else {
+                Toast.makeText(context, "Ingrese una cantidad", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
+
+    private fun toast() {
+        Toast.makeText(context, "Transacción realizada ${binding.etAmount.text.toString().toDouble()}", Toast.LENGTH_SHORT).show()
+    }
+
 }
