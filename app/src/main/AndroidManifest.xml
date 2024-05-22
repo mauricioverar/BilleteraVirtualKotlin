@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BilleteraVirtualKotlin">
-        <activity
+        <!--<activity
             android:name=".view.ProfilePage"
             android:exported="false" />
         <activity
@@ -27,17 +27,17 @@
             android:exported="false" />
         <activity
             android:name=".view.LoginPage"
-            android:exported="false" /> <!-- tools:targetApi="31" -->
+            android:exported="false" /> &lt;!&ndash; tools:targetApi="31" &ndash;&gt;
         <activity
             android:name=".view.SignupPage"
             android:exported="false" />
         <activity
             android:name=".view.LoginSignupPage"
-            android:exported="false" /> <!-- SplashScreen -->
+            android:exported="false" />-->
         <activity
             android:name=".view.SplashScreen"
             android:exported="true"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/Theme.BilleteraVirtualKotlin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
