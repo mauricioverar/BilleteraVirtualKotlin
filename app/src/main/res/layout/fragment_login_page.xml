@@ -95,8 +95,7 @@ tools:ignore="ContentDescription">
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            app:endIconMode="password_toggle">
+            android:layout_marginTop="4dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"

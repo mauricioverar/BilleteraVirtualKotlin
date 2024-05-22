@@ -61,6 +61,10 @@
         <action
             android:id="@+id/action_homePageFragment_to_requestMoneyFragment"
             app:destination="@id/requestMoneyFragment" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="Guest" />
     </fragment>
     <fragment
         android:id="@+id/profilePageFragment"
