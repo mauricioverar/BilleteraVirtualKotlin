@@ -15,7 +15,9 @@ class SplashScreen : AppCompatActivity() {
         //val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        //setContentView(R.layout.activity_main)
         setContentView(R.layout.activity_main)
+
 
         //splashScreen.setKeepOnScreenCondition {true}
 

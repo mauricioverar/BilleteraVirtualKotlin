@@ -7,22 +7,30 @@ import mau.example.billeteravirtualkotlin.model.UserModel
 import mau.example.billeteravirtualkotlin.model.UserProvider
 
 class UsersViewModel: ViewModel() {
-    private val _users = MutableLiveData<List<UserModel>>()
+    val usuario = MutableLiveData<UserModel>()
+
+    fun showUser() {
+        val currentUser: UserModel = UserProvider.getUsers()
+        usuario.postValue(currentUser)
+    }
+
+
+    private var _users = MutableLiveData<List<UserModel>>()
     val usersLVD: LiveData<List<UserModel>>// observer
     get() = _users
 
-    init {
+    /*init {
         loadUsers()
 
-    }
-    private fun loadUsers() {
+    }*/
+    /*private fun loadUsers() {
         _users.value = UserProvider.getUsers()
-    }
+    }*/
 
-    fun showUsers() {
+    /*fun showUsers() {
         val users = UserProvider.getUsers()
         _users.value = users
-    }
+    }*/
 
     /*private val users = mutableListOf<User>()
     fun addUser(user: User) {

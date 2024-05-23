@@ -51,19 +51,19 @@ tools:ignore="ContentDescription">
         android:gravity="center_horizontal"
         android:text="@string/send_money_string"
         android:textColor="@color/very_dark_gray"
-        android:textSize="20sp"
+        android:textSize="24sp"
         tools:ignore="RtlHardcoded" />
 
     <ImageView
         android:id="@+id/left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="29dp"
+        android:layout_height="23dp"
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentStart="false"
         android:layout_alignParentLeft="false"
         android:layout_centerInParent="false"
         android:layout_centerHorizontal="false"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:baselineAlignBottom="false"
         android:src="@drawable/left"

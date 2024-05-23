@@ -3,47 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_weight="1"
-        tools:srcCompat="@drawable/ic_user" />
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txt_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <EditText
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <!--<EditText
             android:id="@+id/editTextDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="14-10, 10:24"
             android:inputType="date"
-            android:minHeight="48dp" />
+            android:minHeight="48dp" />-->
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:text="-$15.00"
-        android:textSize="24sp"
-        android:textStyle="bold" />
 
 </LinearLayout>

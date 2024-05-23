@@ -2,8 +2,8 @@ package mau.example.billeteravirtualkotlin.model
 
 class UserProvider {
     companion object {
-        fun getUsers(): List<UserModel> {
-            return user
+        fun getUsers(): UserModel {
+            return user[1]
         }
 
         private val user = listOf<UserModel>(

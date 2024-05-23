@@ -10,30 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BilleteraVirtualKotlin">
-        <!--<activity
-            android:name=".view.ProfilePage"
+        <activity
+            android:name=".view.CasosActivity"
             android:exported="false" />
-        <activity
-            android:name=".view.SendMoney"
-            android:exported="false" />
-        <activity
-            android:name=".view.RequestMoney"
-            android:exported="false" />
-        <activity
-            android:name=".view.HomePage"
-            android:exported="false" />
-        <activity
-            android:name=".view.HomePageEmptyCase"
-            android:exported="false" />
-        <activity
-            android:name=".view.LoginPage"
-            android:exported="false" /> &lt;!&ndash; tools:targetApi="31" &ndash;&gt;
-        <activity
-            android:name=".view.SignupPage"
-            android:exported="false" />
-        <activity
-            android:name=".view.LoginSignupPage"
-            android:exported="false" />-->
         <activity
             android:name=".view.SplashScreen"
             android:exported="true"
